@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100/
+.Trashes/
+.fseventsd/
+.TemporaryItems/
+.VolumeIcon.icns
+
+# Windows (для участников проекта)
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Временные файлы редакторов
+*~
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Локальная конфигурация и секреты
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_ed25519
+id_rsa
+
