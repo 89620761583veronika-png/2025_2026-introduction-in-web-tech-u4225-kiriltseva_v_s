@@ -20,3 +20,13 @@
 Практический проект: [devops-lab-kiriltseva](https://github.com/89620761583veronika-png/devops-lab-kiriltseva).
 
 Оформление соответствует [правилам курса](https://itmo-ict-faculty.github.io/introduction-in-web-tech/education/labs2025-2026/reportdesign/). Лицензия: [MIT](LICENSE).
+
+## Курсовая работа
+
+[Создание персонального сайта с использованием MkDocs](coursework/README.md).
+
+- [Отчёт](coursework/report/coursework.md).
+- [Конфигурация сайта](coursework/mkdocs.yml).
+- [Исходные страницы](coursework/docs/).
+
+Сайт на Material содержит шесть страниц, поиск и две цветовые схемы. Команды запуска и сборки приведены в README проекта.

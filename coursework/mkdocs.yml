@@ -1,0 +1,66 @@
+site_name: Вероника Кирильцева
+site_description: Учебное портфолио Вероники Кирильцевой — веб-технологии, Docker и документация.
+site_author: Кирильцева Вероника Сергеевна
+# site_url добавляется после выбора адреса публикации.
+use_directory_urls: true
+theme:
+  name: material
+  language: ru
+  font: false
+  logo: images/logo.svg
+  favicon: images/logo.svg
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Переключить на тёмную тему
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Переключить на светлую тему
+nav:
+  - Главная: index.md
+  - О себе: about.md
+  - Проекты: projects.md
+  - Резюме: resume.md
+  - Достижения: achievements.md
+  - Контакты: contacts.md
+plugins:
+  - search:
+      lang:
+        - ru
+        - en
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+extra_css:
+  - stylesheets/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/89620761583veronika-png
+      name: GitHub Вероники Кирильцевой
+copyright: © 2026 Вероника Кирильцева · Учебное портфолио

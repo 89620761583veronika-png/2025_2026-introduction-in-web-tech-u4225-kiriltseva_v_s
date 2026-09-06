@@ -1,0 +1,28 @@
+Проверка: 06.09.2026
+MkDocs 1.6.1 / Material 9.7.7
+mkdocs build --strict: PASS
+Локальные ссылки и ресурсы: 243; ошибок: 0
+HTTP 200: /
+HTTP 200: /about/
+HTTP 200: /projects/
+HTTP 200: /resume/
+HTTP 200: /achievements/
+HTTP 200: /contacts/
+HTTP 200: /search/search_index.json
+Поисковый индекс: PASS, русский текст и документы присутствуют
+
+Внешние ссылки:
+HTTP 200: https://github.com/89620761583veronika-png
+HTTP 200: https://github.com/89620761583veronika-png/2025_2026-introduction-in-web-tech-u4225-kiriltseva_v_s/blob/main/lab0/lab0_report.md
+HTTP 200: https://github.com/89620761583veronika-png/2025_2026-introduction-in-web-tech-u4225-kiriltseva_v_s/blob/main/lab1/lab1_report.md
+HTTP 200: https://github.com/89620761583veronika-png/2025_2026-introduction-in-web-tech-u4225-kiriltseva_v_s/blob/main/lab2/lab2_report.md
+HTTP 200: https://github.com/89620761583veronika-png/devops-lab-kiriltseva
+HTTP 200: https://github.com/89620761583veronika-png/devops-lab-kiriltseva/issues
+HTTP 200: https://github.com/89620761583veronika-png/lab2-cicd-kiriltseva
+HTTP 200: https://squidfunk.github.io/mkdocs-material/
+
+Проверка интерфейса в браузере:
+Поиск «мониторин»: 4 совпадения.
+Главная → Проекты: переход успешен.
+Тёмная тема: подтверждена визуально.
+Главная 390 × 844: текст и кнопки помещаются.

@@ -1,0 +1,25 @@
+/* Локальные шрифты: сайт не зависит от Google Fonts. */
+:root { --md-text-font: "Arial"; --md-code-font: "Menlo", "Consolas"; }
+[data-md-color-scheme="default"] { --md-primary-fg-color: #173e32; --md-primary-bg-color: #fff; --md-accent-fg-color: #276542; --md-typeset-a-color: #24613f; --md-default-bg-color: #fafcfb; }
+[data-md-color-scheme="slate"] { --md-primary-fg-color: #142b24; --md-primary-bg-color: #fff; --md-accent-fg-color: #b9f55c; --md-typeset-a-color: #b9f55c; --md-default-bg-color: #15231e; --md-default-fg-color: #e7ede9; --md-default-fg-color--light: #b0c1b7; }
+.md-grid { max-width: 1240px; }
+.md-typeset { font-size: .85rem; line-height: 1.75; }
+.md-typeset h1 { color: var(--md-default-fg-color); font-weight: 750; letter-spacing: -.045em; }
+.md-typeset h2 { font-weight: 700; letter-spacing: -.025em; }
+.md-header { box-shadow: none; }
+.md-tabs { border-top: 1px solid #ffffff20; }
+.hero { position: relative; padding: 2.8rem 2.6rem; margin: 0 0 2.4rem; background: #173e32; border-radius: 1.2rem; color: #edf3ee; }
+.hero .eyebrow { font-size: .65rem; font-weight: 700; letter-spacing: .15em; color: #b9f55c; padding-right: 5rem; }
+.md-typeset .hero h1 { color: #fff; font-size: 2.45rem; margin: 1.5rem 0 .5rem; max-width: 80%; line-height: 1.12; }
+.hero-lead { font-size: 1.55rem; letter-spacing: -.025em; line-height: 1.35; }
+.hero > p { max-width: 34rem; }
+.hero-logo { position: absolute; right: 2.5rem; top: 2.5rem; width: 4.4rem; height: 4.4rem; }
+.md-typeset .hero .md-button { color: #edf3ee; border-color: #739386; margin: .6rem .5rem 0 0; border-radius: .4rem; padding: .6em 1.15em; }
+.md-typeset .hero .md-button--primary { color: #172b25; background: #b9f55c; border-color: #b9f55c; }
+.md-typeset .hero .md-button:hover { background: #d2ff91; color: #172b25; border-color: #d2ff91; }
+.md-typeset .grid.cards > ul > li { border-radius: .65rem; padding: 1.15rem; box-shadow: none; border: 1px solid #80968a44; }
+.md-typeset .grid.cards > ul > li:hover { border-color: #6c976a; box-shadow: none; }
+.md-typeset blockquote { border-left: 3px solid #6e9c46; padding: .5rem 1rem; }
+.md-footer { background: #112b22; }
+@media (max-width: 700px) { .hero { padding: 1.6rem 1.2rem; } .hero-logo { width: 2.7rem; height: 2.7rem; top: 1.5rem; right: 1.2rem; } .hero .eyebrow { max-width: 80%; padding-right: 0; font-size: .6rem; } .md-typeset .hero h1 { font-size: 2rem; max-width: 100%; margin-top: 2.1rem; } .hero-lead { font-size: 1.2rem; } .md-typeset .hero .md-button { display: block; text-align: center; margin-right: 0; } }
+@media print { .md-header, .md-tabs, .md-sidebar, .md-footer, .md-top { display: none; } .md-content { margin: 0; } }
