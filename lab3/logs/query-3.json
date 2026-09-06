@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "data": {
+    "resultType": "vector",
+    "result": [
+      {
+        "metric": {
+          "instance": "node-exporter:9100",
+          "job": "node-exporter"
+        },
+        "value": [
+          1788692262.112,
+          "10.59917701144899"
+        ]
+      }
+    ]
+  }
+}

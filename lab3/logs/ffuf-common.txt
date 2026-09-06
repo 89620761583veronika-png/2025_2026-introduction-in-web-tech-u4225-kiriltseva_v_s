@@ -1,0 +1,27 @@
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v2.2.1
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://127.0.0.1:8083/FUZZ
+ :: Wordlist         : FUZZ: /Users/veronika/Desktop/ИКТ/2025_2026-introduction-in-web-tech-u4225-kiriltseva_v_s/lab3/security/wordlists/common.txt
+ :: Output file      : logs/ffuf-common.json
+ :: File format      : json
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 5
+ :: Threads          : 2
+ :: Matcher          : Response status: 200,301,302,403
+________________________________________________
+
+[2K:: Progress: [0/8] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 ::[2K:: Progress: [0/8] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 ::[2Kadmin                   [Status: 403, Size: 153, Words: 3, Lines: 8, Duration: 1ms][0m
+[2K:: Progress: [1/8] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 ::[2K:: Progress: [1/8] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 ::[2K:: Progress: [1/8] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 ::[2Kdocs                    [Status: 301, Size: 169, Words: 5, Lines: 8, Duration: 2ms][0m
+[2K:: Progress: [2/8] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 ::[2K:: Progress: [2/8] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 ::[2Kfiles                   [Status: 301, Size: 169, Words: 5, Lines: 8, Duration: 1ms][0m
+[2K:: Progress: [3/8] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 ::[2K:: Progress: [3/8] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 ::[2K:: Progress: [3/8] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 ::[2K:: Progress: [4/8] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 ::[2K:: Progress: [5/8] :: Job [1/1] :: 6 req/sec :: Duration: [0:00:01] :: Errors: 0 ::[2K:: Progress: [5/8] :: Job [1/1] :: 6 req/sec :: Duration: [0:00:01] :: Errors: 0 ::[2K:: Progress: [6/8] :: Job [1/1] :: 6 req/sec :: Duration: [0:00:01] :: Errors: 0 ::[2K:: Progress: [6/8] :: Job [1/1] :: 6 req/sec :: Duration: [0:00:01] :: Errors: 0 ::[2K:: Progress: [7/8] :: Job [1/1] :: 5 req/sec :: Duration: [0:00:01] :: Errors: 0 ::[2K:: Progress: [8/8] :: Job [1/1] :: 5 req/sec :: Duration: [0:00:01] :: Errors: 0 ::[2K:: Progress: [8/8] :: Job [1/1] :: 5 req/sec :: Duration: [0:00:01] :: Errors: 0 ::

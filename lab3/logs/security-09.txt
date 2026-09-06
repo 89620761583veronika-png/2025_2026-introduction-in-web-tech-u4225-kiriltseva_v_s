@@ -1,0 +1,15 @@
+$ curl --path-as-is --max-time 5 -sS -i http://127.0.0.1:8083/config.php
+HTTP/1.1 404 Not Found
+Server: nginx/1.28.0
+Date: Sun, 06 Sep 2026 10:02:31 GMT
+Content-Type: text/html
+Content-Length: 153
+Connection: keep-alive
+
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.28.0</center>
+</body>
+</html>

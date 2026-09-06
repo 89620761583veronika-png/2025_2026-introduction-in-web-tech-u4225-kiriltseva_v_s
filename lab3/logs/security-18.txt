@@ -1,0 +1,15 @@
+$ curl --path-as-is --max-time 5 -sS -i http://127.0.0.1:8083/files/
+HTTP/1.1 200 OK
+Server: nginx/1.28.0
+Date: Sun, 06 Sep 2026 10:02:32 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+<html>
+<head><title>Index of /files/</title></head>
+<body>
+<h1>Index of /files/</h1><hr><pre><a href="../">../</a>
+<a href="readme.txt">readme.txt</a>                                         06-Sep-2026 10:01                  45
+</pre><hr></body>
+</html>

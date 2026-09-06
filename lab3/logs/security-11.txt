@@ -1,0 +1,12 @@
+$ curl --path-as-is --max-time 5 -sS -i http://127.0.0.1:8083/config.bak
+HTTP/1.1 200 OK
+Server: nginx/1.28.0
+Date: Sun, 06 Sep 2026 10:02:31 GMT
+Content-Type: application/octet-stream
+Content-Length: 40
+Last-Modified: Sun, 06 Sep 2026 10:01:30 GMT
+Connection: keep-alive
+ETag: "6a9d39fa-28"
+Accept-Ranges: bytes
+
+DEMO BACKUP: APP_NAME=lab3; no secrets.

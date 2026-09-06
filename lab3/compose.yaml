@@ -1,0 +1,54 @@
+name: lab3
+services:
+  node-exporter:
+    image: prom/node-exporter:v1.9.1
+    restart: unless-stopped
+    ports: ['127.0.0.1:9100:9100']
+    pid: host
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    command:
+      - --path.procfs=/host/proc
+      - --path.sysfs=/host/sys
+      - --path.rootfs=/rootfs
+      - --collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)
+    networks: [monitoring]
+  prometheus:
+    image: prom/prometheus:v3.5.0
+    restart: unless-stopped
+    ports: ['127.0.0.1:9090:9090']
+    volumes:
+      - prometheus-data:/prometheus
+      - ./prometheus:/etc/prometheus:ro
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --storage.tsdb.retention.time=200h
+    networks: [monitoring]
+  grafana:
+    image: grafana/grafana:12.1.1
+    restart: unless-stopped
+    ports: ['127.0.0.1:3000:3000']
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: admin
+      GF_USERS_ALLOW_SIGN_UP: 'false'
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./grafana/dashboards:/var/lib/grafana/dashboards:ro
+    networks: [monitoring]
+  target:
+    image: nginx:1.28.0-alpine
+    ports: ['127.0.0.1:8083:80']
+    volumes:
+      - ./security/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./security/site:/usr/share/nginx/html:ro
+    networks: [security]
+networks:
+  monitoring:
+  security:
+volumes:
+  prometheus-data:
+  grafana-data:

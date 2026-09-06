@@ -1,0 +1,2 @@
+ Container lab3-grafana-1 Restarting 
+ Container lab3-grafana-1 Started 

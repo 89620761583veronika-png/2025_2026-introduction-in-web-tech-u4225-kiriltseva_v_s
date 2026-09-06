@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "data": {
+    "resultType": "vector",
+    "result": [
+      {
+        "metric": {
+          "device": "/dev/vda1",
+          "fstype": "ext4",
+          "instance": "node-exporter:9100",
+          "job": "node-exporter",
+          "mountpoint": "/var/lib/docker"
+        },
+        "value": [
+          1788692262.113,
+          "7.894210131602675"
+        ]
+      }
+    ]
+  }
+}

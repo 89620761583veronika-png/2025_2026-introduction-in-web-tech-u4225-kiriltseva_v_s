@@ -1,0 +1,15 @@
+$ curl --path-as-is --max-time 5 -sS -i http://127.0.0.1:8083/admin
+HTTP/1.1 403 Forbidden
+Server: nginx/1.28.0
+Date: Sun, 06 Sep 2026 10:02:32 GMT
+Content-Type: text/html
+Content-Length: 153
+Connection: keep-alive
+
+<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx/1.28.0</center>
+</body>
+</html>

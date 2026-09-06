@@ -1,0 +1,12 @@
+$ curl --path-as-is --max-time 5 -sS -i http://127.0.0.1:8083/
+HTTP/1.1 200 OK
+Server: nginx/1.28.0
+Date: Sun, 06 Sep 2026 10:02:32 GMT
+Content-Type: text/html
+Content-Length: 380
+Last-Modified: Sun, 06 Sep 2026 10:01:30 GMT
+Connection: keep-alive
+ETag: "6a9d39fa-17c"
+Accept-Ranges: bytes
+
+<!doctype html><html lang="ru"><meta charset="utf-8"><title>Лабораторная №3 — учебный сайт</title><h1>Учебный сайт лабораторной №3</h1><p>Локальный стенд для проверки конфигурации nginx. Все данные искусственные.</p><a href="/docs/">Документация</a></html>

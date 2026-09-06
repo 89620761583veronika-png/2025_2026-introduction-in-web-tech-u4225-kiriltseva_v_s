@@ -1,0 +1,58 @@
+{
+  "status": "success",
+  "data": {
+    "activeTargets": [
+      {
+        "discoveredLabels": {
+          "__address__": "node-exporter:9100",
+          "__metrics_path__": "/metrics",
+          "__scheme__": "http",
+          "__scrape_interval__": "15s",
+          "__scrape_timeout__": "10s",
+          "job": "node-exporter"
+        },
+        "labels": {
+          "instance": "node-exporter:9100",
+          "job": "node-exporter"
+        },
+        "scrapePool": "node-exporter",
+        "scrapeUrl": "http://node-exporter:9100/metrics",
+        "globalUrl": "http://node-exporter:9100/metrics",
+        "lastError": "",
+        "lastScrape": "2026-09-06T10:57:29.191242213Z",
+        "lastScrapeDuration": 0.028706625,
+        "health": "up",
+        "scrapeInterval": "15s",
+        "scrapeTimeout": "10s"
+      },
+      {
+        "discoveredLabels": {
+          "__address__": "localhost:9090",
+          "__metrics_path__": "/metrics",
+          "__scheme__": "http",
+          "__scrape_interval__": "15s",
+          "__scrape_timeout__": "10s",
+          "job": "prometheus"
+        },
+        "labels": {
+          "instance": "localhost:9090",
+          "job": "prometheus"
+        },
+        "scrapePool": "prometheus",
+        "scrapeUrl": "http://localhost:9090/metrics",
+        "globalUrl": "http://e7e59a1a4a56:9090/metrics",
+        "lastError": "",
+        "lastScrape": "2026-09-06T10:57:28.108835045Z",
+        "lastScrapeDuration": 0.007379917,
+        "health": "up",
+        "scrapeInterval": "15s",
+        "scrapeTimeout": "10s"
+      }
+    ],
+    "droppedTargets": [],
+    "droppedTargetCounts": {
+      "node-exporter": 0,
+      "prometheus": 0
+    }
+  }
+}

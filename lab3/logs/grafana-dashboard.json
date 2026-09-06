@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "type": "db",
+    "canSave": true,
+    "canEdit": true,
+    "canAdmin": true,
+    "canStar": true,
+    "canDelete": true,
+    "slug": "lab-3-e28094-cpu-pamjat--i-disk",
+    "url": "/d/lab3-system/lab-3-e28094-cpu-pamjat--i-disk",
+    "expires": "0001-01-01T00:00:00Z",
+    "created": "2026-09-06T10:01:52Z",
+    "updated": "2026-09-06T10:04:05Z",
+    "updatedBy": "Anonymous",
+    "createdBy": "Anonymous",
+    "version": 3,
+    "hasAcl": false,
+    "isFolder": false,
+    "apiVersion": "v0alpha1",
+    "folderId": 1,
+    "folderUid": "bfxfd6j5moiyof",
+    "folderTitle": "Lab 3",
+    "folderUrl": "/dashboards/f/bfxfd6j5moiyof/lab-3",
+    "provisioned": false,
+    "provisionedExternalId": "system.json",
+    "annotationsPermissions": {
+      "dashboard": {
+        "canAdd": true,
+        "canEdit": true,
+        "canDelete": true
+      },
+      "organization": {
+        "canAdd": true,
+        "canEdit": true,
+        "canDelete": true
+      }
+    }
+  },
+  "dashboard": {
+    "id": 2,
+    "panels": [
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "unit": "s"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 12,
+          "x": 0,
+          "y": 0
+        },
+        "id": 1,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          }
+        },
+        "targets": [
+          {
+            "expr": "node_cpu_seconds_total",
+            "legendFormat": "CPU {{cpu}} · {{mode}}",
+            "refId": "A"
+          }
+        ],
+        "title": "CPU: накопленное время по режимам",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percent"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 12,
+          "x": 12,
+          "y": 0
+        },
+        "id": 2,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          }
+        },
+        "targets": [
+          {
+            "expr": "100 * (1 - avg by(instance) (rate(node_cpu_seconds_total{mode=\"idle\"}[1m])))",
+            "legendFormat": "{{instance}} {{mode}} {{mountpoint}}",
+            "refId": "A"
+          }
+        ],
+        "title": "CPU: загрузка, %",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percent"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 12,
+          "x": 0,
+          "y": 7
+        },
+        "id": 3,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          }
+        },
+        "targets": [
+          {
+            "expr": "100 * (1 - node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)",
+            "legendFormat": "{{instance}} {{mode}} {{mountpoint}}",
+            "refId": "A"
+          }
+        ],
+        "title": "Память: занято, %",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percent"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 12,
+          "x": 12,
+          "y": 7
+        },
+        "id": 4,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          }
+        },
+        "targets": [
+          {
+            "expr": "100 * (1 - node_filesystem_avail_bytes{mountpoint=\"/var/lib/docker\"} / node_filesystem_size_bytes{mountpoint=\"/var/lib/docker\"})",
+            "legendFormat": "{{mountpoint}}",
+            "refId": "A"
+          }
+        ],
+        "title": "Диск: занято, %",
+        "type": "timeseries"
+      }
+    ],
+    "refresh": "15s",
+    "schemaVersion": 41,
+    "time": {
+      "from": "now-5m",
+      "to": "now"
+    },
+    "title": "Lab 3 — CPU, память и диск",
+    "uid": "lab3-system",
+    "version": 3
+  }
+}

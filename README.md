@@ -13,6 +13,7 @@
 | №0 | Создание репозитория и настройка рабочего окружения | [lab0_report.md](lab0/lab0_report.md) |
 | №1 | Основы работы с Docker (включая задание со звёздочкой) | [lab1_report.md](lab1/lab1_report.md) |
 | №2 | CI/CD для Docker-приложения (публикация ожидает настройки Docker Hub) | [lab2_report.md](lab2/lab2_report.md) |
+| №3 | Prometheus, Grafana и безопасность локального сайта | [lab3_report.md](lab3/lab3_report.md) |
 
 Папки следующих лабораторных добавляются по мере выполнения заданий. Дата `Date of finished` в шапке отчёта означает дату защиты, а не дату публикации.
 

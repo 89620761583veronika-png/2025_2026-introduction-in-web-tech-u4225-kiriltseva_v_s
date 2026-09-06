@@ -1,0 +1,96 @@
+<!doctype html><meta charset="utf-8"><title>Lab3: files</title><style>body{font:16px system-ui;margin:32px;background:#f5f7fa}section{background:white;border:1px solid #cbd5e1;padding:16px;margin:16px 0}pre{white-space:pre-wrap;font:13px monospace}h2{font-size:18px}</style><h1>Lab 3 — реальные HTTP-ответы: files</h1><p>Локальный учебный стенд http://127.0.0.1:8083 · команды curl --path-as-is</p><section><h2>/missing-lab3-control — HTTP 404</h2><pre>HTTP/1.1 404 Not Found
+Server: nginx/1.28.0
+Date: Sun, 06 Sep 2026 10:02:31 GMT
+Content-Type: text/html
+Content-Length: 153
+Connection: keep-alive
+
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;404 Not Found&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx/1.28.0&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></section><section><h2>/.env — HTTP 403</h2><pre>HTTP/1.1 403 Forbidden
+Server: nginx/1.28.0
+Date: Sun, 06 Sep 2026 10:02:31 GMT
+Content-Type: text/html
+Content-Length: 153
+Connection: keep-alive
+
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;403 Forbidden&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx/1.28.0&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></section><section><h2>/config.php — HTTP 404</h2><pre>HTTP/1.1 404 Not Found
+Server: nginx/1.28.0
+Date: Sun, 06 Sep 2026 10:02:31 GMT
+Content-Type: text/html
+Content-Length: 153
+Connection: keep-alive
+
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;404 Not Found&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx/1.28.0&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></section><section><h2>/backup.sql — HTTP 404</h2><pre>HTTP/1.1 404 Not Found
+Server: nginx/1.28.0
+Date: Sun, 06 Sep 2026 10:02:31 GMT
+Content-Type: text/html
+Content-Length: 153
+Connection: keep-alive
+
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;404 Not Found&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx/1.28.0&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></section><section><h2>/config.bak — HTTP 200</h2><pre>HTTP/1.1 200 OK
+Server: nginx/1.28.0
+Date: Sun, 06 Sep 2026 10:02:31 GMT
+Content-Type: application/octet-stream
+Content-Length: 40
+Last-Modified: Sun, 06 Sep 2026 10:01:30 GMT
+Connection: keep-alive
+ETag: &quot;6a9d39fa-28&quot;
+Accept-Ranges: bytes
+
+DEMO BACKUP: APP_NAME=lab3; no secrets.
+</pre></section><section><h2>/index.html.old — HTTP 404</h2><pre>HTTP/1.1 404 Not Found
+Server: nginx/1.28.0
+Date: Sun, 06 Sep 2026 10:02:31 GMT
+Content-Type: text/html
+Content-Length: 153
+Connection: keep-alive
+
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;404 Not Found&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx/1.28.0&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></section><section><h2>/config.backup — HTTP 404</h2><pre>HTTP/1.1 404 Not Found
+Server: nginx/1.28.0
+Date: Sun, 06 Sep 2026 10:02:32 GMT
+Content-Type: text/html
+Content-Length: 153
+Connection: keep-alive
+
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;404 Not Found&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx/1.28.0&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></section>

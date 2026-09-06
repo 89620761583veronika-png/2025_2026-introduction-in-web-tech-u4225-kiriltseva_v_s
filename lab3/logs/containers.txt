@@ -1,0 +1,5 @@
+NAME                   IMAGE                       COMMAND                  SERVICE         CREATED          STATUS          PORTS
+lab3-grafana-1         grafana/grafana:12.1.1      "/run.sh"                grafana         55 minutes ago   Up 54 minutes   127.0.0.1:3000->3000/tcp
+lab3-node-exporter-1   prom/node-exporter:v1.9.1   "/bin/node_exporter …"   node-exporter   55 minutes ago   Up 55 minutes   127.0.0.1:9100->9100/tcp
+lab3-prometheus-1      prom/prometheus:v3.5.0      "/bin/prometheus --c…"   prometheus      55 minutes ago   Up 55 minutes   127.0.0.1:9090->9090/tcp
+lab3-target-1          nginx:1.28.0-alpine         "/docker-entrypoint.…"   target          55 minutes ago   Up 55 minutes   127.0.0.1:8083->80/tcp

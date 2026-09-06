@@ -1,0 +1,85 @@
+<!doctype html><meta charset="utf-8"><title>Lab3: traversal</title><style>body{font:16px system-ui;margin:32px;background:#f5f7fa}section{background:white;border:1px solid #cbd5e1;padding:16px;margin:16px 0}pre{white-space:pre-wrap;font:13px monospace}h2{font-size:18px}</style><h1>Lab 3 — реальные HTTP-ответы: traversal</h1><p>Локальный учебный стенд http://127.0.0.1:8083 · команды curl --path-as-is</p><section><h2>/../../../etc/passwd — HTTP 400</h2><pre>HTTP/1.1 400 Bad Request
+Server: nginx/1.28.0
+Date: Sun, 06 Sep 2026 10:02:31 GMT
+Content-Type: text/html
+Content-Length: 157
+Connection: close
+
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx/1.28.0&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></section><section><h2>/..%2F..%2F..%2Fetc%2Fpasswd — HTTP 400</h2><pre>HTTP/1.1 400 Bad Request
+Server: nginx/1.28.0
+Date: Sun, 06 Sep 2026 10:02:31 GMT
+Content-Type: text/html
+Content-Length: 157
+Connection: close
+
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx/1.28.0&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></section><section><h2>/....//....//....//etc/passwd — HTTP 403</h2><pre>HTTP/1.1 403 Forbidden
+Server: nginx/1.28.0
+Date: Sun, 06 Sep 2026 10:02:31 GMT
+Content-Type: text/html
+Content-Length: 153
+Connection: keep-alive
+
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;403 Forbidden&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx/1.28.0&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></section><section><h2>/docs/../../etc/passwd — HTTP 400</h2><pre>HTTP/1.1 400 Bad Request
+Server: nginx/1.28.0
+Date: Sun, 06 Sep 2026 10:02:31 GMT
+Content-Type: text/html
+Content-Length: 157
+Connection: close
+
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx/1.28.0&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></section><section><h2>/files/..%2F..%2Fetc%2Fpasswd — HTTP 400</h2><pre>HTTP/1.1 400 Bad Request
+Server: nginx/1.28.0
+Date: Sun, 06 Sep 2026 10:02:31 GMT
+Content-Type: text/html
+Content-Length: 157
+Connection: close
+
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx/1.28.0&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></section><section><h2>/files/%252e%252e%252fetc%252fpasswd — HTTP 404</h2><pre>HTTP/1.1 404 Not Found
+Server: nginx/1.28.0
+Date: Sun, 06 Sep 2026 10:02:31 GMT
+Content-Type: text/html
+Content-Length: 153
+Connection: keep-alive
+
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;404 Not Found&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx/1.28.0&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></section>

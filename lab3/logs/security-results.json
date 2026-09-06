@@ -1,0 +1,100 @@
+{
+  "time": "2026-09-06T13:02:32.092399+03:00",
+  "results": [
+    {
+      "path": "/../../../etc/passwd",
+      "response": "HTTP/1.1 400 Bad Request\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:31 GMT\nContent-Type: text/html\nContent-Length: 157\nConnection: close\n\n<html>\n<head><title>400 Bad Request</title></head>\n<body>\n<center><h1>400 Bad Request</h1></center>\n<hr><center>nginx/1.28.0</center>\n</body>\n</html>\n",
+      "status": 400
+    },
+    {
+      "path": "/..%2F..%2F..%2Fetc%2Fpasswd",
+      "response": "HTTP/1.1 400 Bad Request\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:31 GMT\nContent-Type: text/html\nContent-Length: 157\nConnection: close\n\n<html>\n<head><title>400 Bad Request</title></head>\n<body>\n<center><h1>400 Bad Request</h1></center>\n<hr><center>nginx/1.28.0</center>\n</body>\n</html>\n",
+      "status": 400
+    },
+    {
+      "path": "/....//....//....//etc/passwd",
+      "response": "HTTP/1.1 403 Forbidden\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:31 GMT\nContent-Type: text/html\nContent-Length: 153\nConnection: keep-alive\n\n<html>\n<head><title>403 Forbidden</title></head>\n<body>\n<center><h1>403 Forbidden</h1></center>\n<hr><center>nginx/1.28.0</center>\n</body>\n</html>\n",
+      "status": 403
+    },
+    {
+      "path": "/docs/../../etc/passwd",
+      "response": "HTTP/1.1 400 Bad Request\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:31 GMT\nContent-Type: text/html\nContent-Length: 157\nConnection: close\n\n<html>\n<head><title>400 Bad Request</title></head>\n<body>\n<center><h1>400 Bad Request</h1></center>\n<hr><center>nginx/1.28.0</center>\n</body>\n</html>\n",
+      "status": 400
+    },
+    {
+      "path": "/files/..%2F..%2Fetc%2Fpasswd",
+      "response": "HTTP/1.1 400 Bad Request\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:31 GMT\nContent-Type: text/html\nContent-Length: 157\nConnection: close\n\n<html>\n<head><title>400 Bad Request</title></head>\n<body>\n<center><h1>400 Bad Request</h1></center>\n<hr><center>nginx/1.28.0</center>\n</body>\n</html>\n",
+      "status": 400
+    },
+    {
+      "path": "/files/%252e%252e%252fetc%252fpasswd",
+      "response": "HTTP/1.1 404 Not Found\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:31 GMT\nContent-Type: text/html\nContent-Length: 153\nConnection: keep-alive\n\n<html>\n<head><title>404 Not Found</title></head>\n<body>\n<center><h1>404 Not Found</h1></center>\n<hr><center>nginx/1.28.0</center>\n</body>\n</html>\n",
+      "status": 404
+    },
+    {
+      "path": "/missing-lab3-control",
+      "response": "HTTP/1.1 404 Not Found\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:31 GMT\nContent-Type: text/html\nContent-Length: 153\nConnection: keep-alive\n\n<html>\n<head><title>404 Not Found</title></head>\n<body>\n<center><h1>404 Not Found</h1></center>\n<hr><center>nginx/1.28.0</center>\n</body>\n</html>\n",
+      "status": 404
+    },
+    {
+      "path": "/.env",
+      "response": "HTTP/1.1 403 Forbidden\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:31 GMT\nContent-Type: text/html\nContent-Length: 153\nConnection: keep-alive\n\n<html>\n<head><title>403 Forbidden</title></head>\n<body>\n<center><h1>403 Forbidden</h1></center>\n<hr><center>nginx/1.28.0</center>\n</body>\n</html>\n",
+      "status": 403
+    },
+    {
+      "path": "/config.php",
+      "response": "HTTP/1.1 404 Not Found\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:31 GMT\nContent-Type: text/html\nContent-Length: 153\nConnection: keep-alive\n\n<html>\n<head><title>404 Not Found</title></head>\n<body>\n<center><h1>404 Not Found</h1></center>\n<hr><center>nginx/1.28.0</center>\n</body>\n</html>\n",
+      "status": 404
+    },
+    {
+      "path": "/backup.sql",
+      "response": "HTTP/1.1 404 Not Found\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:31 GMT\nContent-Type: text/html\nContent-Length: 153\nConnection: keep-alive\n\n<html>\n<head><title>404 Not Found</title></head>\n<body>\n<center><h1>404 Not Found</h1></center>\n<hr><center>nginx/1.28.0</center>\n</body>\n</html>\n",
+      "status": 404
+    },
+    {
+      "path": "/config.bak",
+      "response": "HTTP/1.1 200 OK\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:31 GMT\nContent-Type: application/octet-stream\nContent-Length: 40\nLast-Modified: Sun, 06 Sep 2026 10:01:30 GMT\nConnection: keep-alive\nETag: \"6a9d39fa-28\"\nAccept-Ranges: bytes\n\nDEMO BACKUP: APP_NAME=lab3; no secrets.\n",
+      "status": 200
+    },
+    {
+      "path": "/index.html.old",
+      "response": "HTTP/1.1 404 Not Found\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:31 GMT\nContent-Type: text/html\nContent-Length: 153\nConnection: keep-alive\n\n<html>\n<head><title>404 Not Found</title></head>\n<body>\n<center><h1>404 Not Found</h1></center>\n<hr><center>nginx/1.28.0</center>\n</body>\n</html>\n",
+      "status": 404
+    },
+    {
+      "path": "/config.backup",
+      "response": "HTTP/1.1 404 Not Found\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:32 GMT\nContent-Type: text/html\nContent-Length: 153\nConnection: keep-alive\n\n<html>\n<head><title>404 Not Found</title></head>\n<body>\n<center><h1>404 Not Found</h1></center>\n<hr><center>nginx/1.28.0</center>\n</body>\n</html>\n",
+      "status": 404
+    },
+    {
+      "path": "/admin",
+      "response": "HTTP/1.1 403 Forbidden\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:32 GMT\nContent-Type: text/html\nContent-Length: 153\nConnection: keep-alive\n\n<html>\n<head><title>403 Forbidden</title></head>\n<body>\n<center><h1>403 Forbidden</h1></center>\n<hr><center>nginx/1.28.0</center>\n</body>\n</html>\n",
+      "status": 403
+    },
+    {
+      "path": "/wp-admin",
+      "response": "HTTP/1.1 404 Not Found\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:32 GMT\nContent-Type: text/html\nContent-Length: 153\nConnection: keep-alive\n\n<html>\n<head><title>404 Not Found</title></head>\n<body>\n<center><h1>404 Not Found</h1></center>\n<hr><center>nginx/1.28.0</center>\n</body>\n</html>\n",
+      "status": 404
+    },
+    {
+      "path": "/phpmyadmin",
+      "response": "HTTP/1.1 404 Not Found\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:32 GMT\nContent-Type: text/html\nContent-Length: 153\nConnection: keep-alive\n\n<html>\n<head><title>404 Not Found</title></head>\n<body>\n<center><h1>404 Not Found</h1></center>\n<hr><center>nginx/1.28.0</center>\n</body>\n</html>\n",
+      "status": 404
+    },
+    {
+      "path": "/.git/config",
+      "response": "HTTP/1.1 403 Forbidden\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:32 GMT\nContent-Type: text/html\nContent-Length: 153\nConnection: keep-alive\n\n<html>\n<head><title>403 Forbidden</title></head>\n<body>\n<center><h1>403 Forbidden</h1></center>\n<hr><center>nginx/1.28.0</center>\n</body>\n</html>\n",
+      "status": 403
+    },
+    {
+      "path": "/files/",
+      "response": "HTTP/1.1 200 OK\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:32 GMT\nContent-Type: text/html\nTransfer-Encoding: chunked\nConnection: keep-alive\n\n<html>\n<head><title>Index of /files/</title></head>\n<body>\n<h1>Index of /files/</h1><hr><pre><a href=\"../\">../</a>\n<a href=\"readme.txt\">readme.txt</a>                                         06-Sep-2026 10:01                  45\n</pre><hr></body>\n</html>\n",
+      "status": 200
+    },
+    {
+      "path": "/",
+      "response": "HTTP/1.1 200 OK\nServer: nginx/1.28.0\nDate: Sun, 06 Sep 2026 10:02:32 GMT\nContent-Type: text/html\nContent-Length: 380\nLast-Modified: Sun, 06 Sep 2026 10:01:30 GMT\nConnection: keep-alive\nETag: \"6a9d39fa-17c\"\nAccept-Ranges: bytes\n\n<!doctype html><html lang=\"ru\"><meta charset=\"utf-8\"><title>\u041b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u0430\u044f \u21163 \u2014 \u0443\u0447\u0435\u0431\u043d\u044b\u0439 \u0441\u0430\u0439\u0442</title><h1>\u0423\u0447\u0435\u0431\u043d\u044b\u0439 \u0441\u0430\u0439\u0442 \u043b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u043e\u0439 \u21163</h1><p>\u041b\u043e\u043a\u0430\u043b\u044c\u043d\u044b\u0439 \u0441\u0442\u0435\u043d\u0434 \u0434\u043b\u044f \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438 \u043a\u043e\u043d\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438 nginx. \u0412\u0441\u0435 \u0434\u0430\u043d\u043d\u044b\u0435 \u0438\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0435.</p><a href=\"/docs/\">\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f</a></html>\n",
+      "status": 200
+    }
+  ]
+}

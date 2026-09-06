@@ -1,0 +1,5 @@
+CPU: накопленное время по режимам: 80 series, OK
+CPU: загрузка, %: 1 series, OK
+Память: занято, %: 1 series, OK
+Диск: занято, %: 1 series, OK
+Both targets UP; Grafana datasource OK; configuration valid.

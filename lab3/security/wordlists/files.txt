@@ -1,0 +1,9 @@
+.env
+config.php
+backup.sql
+config.bak
+index.html.old
+config.backup
+wp-admin
+phpmyadmin
+.git/config
