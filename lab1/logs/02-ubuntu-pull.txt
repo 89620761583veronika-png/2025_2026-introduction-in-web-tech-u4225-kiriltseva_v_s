@@ -1,0 +1,15 @@
+$ docker pull ubuntu:latest
+latest: Pulling from library/ubuntu
+50914c2b24a1: Pulling fs layer
+ed8299a102e9: Pulling fs layer
+50914c2b24a1: Download complete
+ed8299a102e9: Download complete
+ee7f14aa75fd: Download complete
+50914c2b24a1: Pull complete
+ed8299a102e9: Pull complete
+Digest: sha256:2260313b31c8c011cd2eebe728008efac1b3982be73eb71348ea2648d2c0e09b
+Status: Downloaded newer image for ubuntu:latest
+docker.io/library/ubuntu:latest
+
+[exit code: 0]
+

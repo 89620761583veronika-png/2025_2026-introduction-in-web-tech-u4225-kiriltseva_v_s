@@ -1,0 +1,7 @@
+$ lsof -nP -iTCP:5000 -sTCP:LISTEN
+COMMAND   PID     USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+ControlCe 459 veronika   11u  IPv4 0x617540fbd6c4ba83      0t0  TCP *:5000 (LISTEN)
+ControlCe 459 veronika   12u  IPv6 0x76f11e318d350b1e      0t0  TCP *:5000 (LISTEN)
+
+[exit code: 0]
+

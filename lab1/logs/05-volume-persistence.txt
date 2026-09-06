@@ -1,0 +1,45 @@
+$ docker exec volume-test cat /data/test.txt
+Hello from volume
+
+[exit code: 0]
+
+$ docker stop volume-test
+volume-test
+
+[exit code: 0]
+
+$ docker rm volume-test
+volume-test
+
+[exit code: 0]
+
+$ docker run -it --name volume-test-2 -d -v my-volume:/data ubuntu bash
+761f953db30f6a37db87fce1223c3bab8cf6bc9abc792769d3d78339adb03ae7
+
+[exit code: 0]
+
+$ docker exec volume-test-2 cat /data/test.txt
+Hello from volume
+
+[exit code: 0]
+
+$ docker volume inspect my-volume
+[
+    {
+        "CreatedAt": "2026-09-05T09:38:00Z",
+        "Driver": "local",
+        "Labels": null,
+        "Mountpoint": "/var/lib/docker/volumes/my-volume/_data",
+        "Name": "my-volume",
+        "Options": null,
+        "Scope": "local"
+    }
+]
+
+[exit code: 0]
+
+$ docker stop volume-test-2
+volume-test-2
+
+[exit code: 0]
+

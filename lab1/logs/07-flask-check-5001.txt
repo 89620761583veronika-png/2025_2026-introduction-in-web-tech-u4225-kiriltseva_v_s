@@ -1,0 +1,15 @@
+$ docker rm flask-container
+flask-container
+
+[exit code: 0]
+
+$ docker run -d -p 5001:5000 --name flask-container my-flask-app
+7389041381b018ace0da787afe89552f527082790f172da538de118d70bff222
+
+[exit code: 0]
+
+$ curl --retry 5 --retry-connrefused --retry-delay 1 -fsS http://localhost:5001
+curl: (56) Recv failure: Connection reset by peer
+
+[exit code: 56]
+

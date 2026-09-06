@@ -1,0 +1,79 @@
+$ docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED              STATUS              PORTS                                     NAMES
+e8d42a2368f8   nginx:alpine   "/docker-entrypoint.…"   About a minute ago   Up About a minute   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   web-server
+
+[exit code: 0]
+
+$ docker ps -a
+CONTAINER ID   IMAGE                COMMAND                  CREATED              STATUS                          PORTS                                     NAMES
+c55faa0be7ef   ubuntu               "bash"                   48 seconds ago       Exited (0) 13 seconds ago                                                 lab1-ubuntu
+e8d42a2368f8   nginx:alpine         "/docker-entrypoint.…"   About a minute ago   Up About a minute               0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   web-server
+a2ddbb5d2be3   hello-world          "/hello"                 About a minute ago   Exited (0) About a minute ago                                             lab1-hello
+214f6ed62e28   postgres:17-alpine   "docker-entrypoint.s…"   11 days ago          Exited (0) 7 days ago                                                     hegai-events-postgres
+ccd1a15b315c   hegai-postgres:17    "docker-entrypoint.s…"   7 weeks ago          Exited (0) 11 days ago                                                    hegai-postgres
+
+[exit code: 0]
+
+$ docker stop web-server
+web-server
+
+[exit code: 0]
+
+$ docker ps -a --filter name=web-server
+CONTAINER ID   IMAGE          COMMAND                  CREATED              STATUS                              PORTS     NAMES
+e8d42a2368f8   nginx:alpine   "/docker-entrypoint.…"   About a minute ago   Exited (0) Less than a second ago             web-server
+
+[exit code: 0]
+
+$ docker start web-server
+web-server
+
+[exit code: 0]
+
+$ curl --retry 5 --retry-connrefused --retry-delay 1 -fsS http://localhost:8080
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, nginx is successfully installed and working.
+Further configuration is required for the web server, reverse proxy, 
+API gateway, load balancer, content cache, or other features.</p>
+
+<p>For online documentation and support please refer to
+<a href="https://nginx.org/">nginx.org</a>.<br/>
+To engage with the community please visit
+<a href="https://community.nginx.org/">community.nginx.org</a>.<br/>
+For enterprise grade support, professional services, additional 
+security features and capabilities please refer to
+<a href="https://f5.com/nginx">f5.com/nginx</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+
+[exit code: 0]
+
+$ docker stop web-server
+web-server
+
+[exit code: 0]
+
+$ docker rm web-server
+web-server
+
+[exit code: 0]
+
+$ docker rmi nginx:alpine
+Untagged: nginx:alpine
+Deleted: sha256:72ba65eb42c10344912a84ff42408db7d34f2feb642204570ab8fc5ffd29f1d3
+
+[exit code: 0]
+

@@ -1,0 +1,59 @@
+$ docker ps -a
+CONTAINER ID   IMAGE                COMMAND                  CREATED              STATUS                          PORTS                                         NAMES
+761f953db30f   ubuntu               "bash"                   16 seconds ago       Exited (137) 5 seconds ago                                                    volume-test-2
+7389041381b0   my-flask-app         "python app.py"          38 seconds ago       Up 38 seconds                   0.0.0.0:5001->5000/tcp, [::]:5001->5000/tcp   flask-container
+c55faa0be7ef   ubuntu               "bash"                   About a minute ago   Exited (0) About a minute ago                                                 lab1-ubuntu
+a2ddbb5d2be3   hello-world          "/hello"                 2 minutes ago        Exited (0) 2 minutes ago                                                      lab1-hello
+214f6ed62e28   postgres:17-alpine   "docker-entrypoint.s…"   11 days ago          Exited (0) 7 days ago                                                         hegai-events-postgres
+ccd1a15b315c   hegai-postgres:17    "docker-entrypoint.s…"   7 weeks ago          Exited (0) 11 days ago                                                        hegai-postgres
+
+[exit code: 0]
+
+$ docker images
+IMAGE                 ID             DISK USAGE   CONTENT SIZE   EXTRA
+hegai-postgres:17     2fdddd9be101        667MB          161MB   U    
+hello-world:latest    5dd0d3e6e255       22.6kB         10.3kB   U    
+my-flask-app:latest   07da595e4740        311MB         68.8MB   U    
+postgres:17           a426e44bac0b        667MB          166MB        
+postgres:17-alpine    18cfe3ef5e68        415MB          116MB   U    
+ubuntu:latest         2260313b31c8        179MB         44.4MB   U    
+
+[exit code: 0]
+
+$ docker volume ls
+DRIVER    VOLUME NAME
+local     event-manager-workspace_hegai_events_pgdata
+local     hegai_hegai_postgres_data
+local     my-volume
+
+[exit code: 0]
+
+$ docker inspect flask-container --format "{{json .Config}}"
+{"Hostname":"7389041381b0","Domainname":"","User":"appuser","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"ExposedPorts":{"5000/tcp":{}},"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":["PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin","LANG=C.UTF-8","GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568","PYTHON_VERSION=3.9.25","PYTHON_SHA256=00e07d7c0f2f0cc002432d1ee84d2a40dae404a99303e3f97701c10966c91834","FLASK_ENV=production"],"Cmd":["python","app.py"],"Image":"my-flask-app","Volumes":null,"WorkingDir":"/app","Entrypoint":null,"Labels":{}}
+
+[exit code: 0]
+
+$ docker inspect flask-container --format "{{json .HostConfig.PortBindings}}"
+{"5000/tcp":[{"HostIp":"","HostPort":"5001"}]}
+
+[exit code: 0]
+
+$ curl -i http://localhost:5001
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100    18  100    18    0     0   7867      0 --:--:-- --:--:-- --:--:--  9000
+HTTP/1.0 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 18
+Server: Werkzeug/2.0.3 Python/3.9.25
+Date: Sat, 05 Sep 2026 09:38:51 GMT
+
+Hello from Docker!
+[exit code: 0]
+
+$ docker exec flask-container curl -fsS http://localhost:5000
+Hello from Docker!
+[exit code: 0]
+

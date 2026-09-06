@@ -1,0 +1,10 @@
+$ docker volume create my-volume
+my-volume
+
+[exit code: 0]
+
+$ docker run -it --name volume-test -d -v my-volume:/data ubuntu bash
+d34584caf9222ef5cc66b30238c290bd60251c4ea918862437ee0eb195eddfbb
+
+[exit code: 0]
+

@@ -1,0 +1,672 @@
+$ docker run -it --name lab1-ubuntu ubuntu bash
+# Transcript recovered using docker logs lab1-ubuntu; ANSI control codes removed.
+root@c55faa0be7ef:/# apt update && apt install -y curl
+
+
+0% [Working]
+            
+Get:1 http://ports.ubuntu.com/ubuntu-ports resolute InRelease [136 kB]
+
+0% [1 InRelease 7519 B/136 kB 6%]
+                                 
+0% [Working]
+0% [Waiting for headers]
+                        
+Get:2 http://ports.ubuntu.com/ubuntu-ports resolute-updates InRelease [137 kB]
+
+0% [2 InRelease 5885 B/137 kB 4%]
+                                 
+0% [Working]
+0% [Waiting for headers]
+                        
+Get:3 http://ports.ubuntu.com/ubuntu-ports resolute-backports InRelease [137 kB]
+
+0% [3 InRelease 22.3 kB/137 kB 16%]
+                                   
+0% [Working]
+0% [Waiting for headers]
+                        
+Get:4 http://ports.ubuntu.com/ubuntu-ports resolute-security InRelease [137 kB]
+
+0% [4 InRelease 30.5 kB/137 kB 22%]
+                                   
+0% [Working]
+14% [Waiting for headers]
+                         
+Get:5 http://ports.ubuntu.com/ubuntu-ports resolute/universe arm64 Packages [19.9 MB]
+
+15% [5 Packages 39.6 kB/19.9 MB 0%]
+                                   
+76% [Waiting for headers]
+                         
+Get:6 http://ports.ubuntu.com/ubuntu-ports resolute/restricted arm64 Packages [231 kB]
+
+                         
+Get:7 http://ports.ubuntu.com/ubuntu-ports resolute/multiverse arm64 Packages [298 kB]
+
+                         
+Get:8 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 Packages [1860 kB]
+
+77% [8 Packages 73.7 kB/1860 kB 4%]
+77% [5 Packages store 0 B] [8 Packages 73.7 kB/1860 kB 4%]
+                                                          
+Get:9 http://ports.ubuntu.com/ubuntu-ports resolute-updates/main arm64 Packages [755 kB]
+
+83% [5 Packages store 0 B] [9 Packages 76.5 kB/755 kB 10%]
+                                                          
+85% [5 Packages store 0 B] [Waiting for headers]
+                                                
+Get:10 http://ports.ubuntu.com/ubuntu-ports resolute-updates/universe arm64 Packages [329 kB]
+
+85% [5 Packages store 0 B] [10 Packages 41.4 kB/329 kB 13%]
+                                                           
+Get:11 http://ports.ubuntu.com/ubuntu-ports resolute-updates/multiverse arm64 Packages [14.3 kB]
+
+                                                           
+86% [5 Packages store 0 B] [Waiting for headers]
+                                                
+Get:12 http://ports.ubuntu.com/ubuntu-ports resolute-updates/restricted arm64 Packages [662 kB]
+
+87% [5 Packages store 0 B] [12 Packages 92.3 kB/662 kB 14%]
+                                                           
+Get:13 http://ports.ubuntu.com/ubuntu-ports resolute-backports/universe arm64 Packages [3308 B]
+
+                                                           
+88% [5 Packages store 0 B] [Waiting for headers]
+                                                
+Get:14 http://ports.ubuntu.com/ubuntu-ports resolute-security/universe arm64 Packages [206 kB]
+
+89% [5 Packages store 0 B] [14 Packages 81.5 kB/206 kB 40%]
+                                                           
+Get:15 http://ports.ubuntu.com/ubuntu-ports resolute-security/multiverse arm64 Packages [11.2 kB]
+
+89% [5 Packages store 0 B] [15 Packages 11.2 kB/11.2 kB 100%]
+                                                             
+Get:16 http://ports.ubuntu.com/ubuntu-ports resolute-security/restricted arm64 Packages [651 kB]
+
+                                                             
+89% [5 Packages store 0 B] [16 Packages 59.5 kB/651 kB 9%]
+                                                          
+91% [5 Packages store 0 B] [Waiting for headers]
+                                                
+Get:17 http://ports.ubuntu.com/ubuntu-ports resolute-security/main arm64 Packages [594 kB]
+
+91% [5 Packages store 0 B] [17 Packages 63.2 kB/594 kB 11%]
+                                                           
+93% [5 Packages store 0 B]
+93% [5 Packages store 0 B]
+                          
+93% [Working]
+93% [6 Packages store 0 B]
+                          
+94% [Working]
+94% [7 Packages store 0 B]
+                          
+94% [Working]
+94% [8 Packages store 0 B]
+                          
+95% [Working]
+95% [9 Packages store 0 B]
+                          
+96% [Working]
+96% [10 Packages store 0 B]
+                           
+96% [Working]
+96% [11 Packages store 0 B]
+                           
+97% [Working]
+97% [12 Packages store 0 B]
+                           
+97% [Working]
+97% [13 Packages store 0 B]
+                           
+98% [Working]
+98% [14 Packages store 0 B]
+                           
+98% [Working]
+98% [15 Packages store 0 B]
+                           
+99% [Working]
+99% [16 Packages store 0 B]
+                           
+99% [Working]
+99% [17 Packages store 0 B]
+                           
+100% [Working]
+              
+Fetched 26.1 MB in 2s (13.5 MB/s)
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 7%
+
+Reading package lists... 7%
+
+Reading package lists... 82%
+
+Reading package lists... 82%
+
+Reading package lists... 84%
+
+Reading package lists... 84%
+
+Reading package lists... 85%
+
+Reading package lists... 85%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 89%
+
+Reading package lists... 89%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 96%
+
+Reading package lists... 96%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+                             
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+                                
+
+Reading state information... 0%
+
+Reading state information... 0%
+                                
+24 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 7%
+
+Reading package lists... 7%
+
+Reading package lists... 82%
+
+Reading package lists... 82%
+
+Reading package lists... 84%
+
+Reading package lists... 84%
+
+Reading package lists... 85%
+
+Reading package lists... 85%
+
+Reading package lists... 88%
+
+Reading package lists... 88%
+
+Reading package lists... 89%
+
+Reading package lists... 89%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 93%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 96%
+
+Reading package lists... 96%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+                             
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+                                
+
+Reading state information... 0%
+
+Reading state information... 0%
+                                
+
+Solving dependencies... 0%
+
+Solving dependencies... 10%
+                            
+Installing:
+  curl
+
+Installing dependencies:
+  bash-completion   libhogweed6t64   libnettle8t64        libssh2-1t64
+  ca-certificates   libidn2-0        libnghttp2-14        libtasn1-6
+  krb5-locales      libk5crypto3     libp11-kit0          libunistring5
+  libbrotli1        libkeyutils1     libpsl5t64           openssl
+  libcurl4t64       libkrb5-3        librtmp1             publicsuffix
+  libffi8           libkrb5support0  libsasl2-2
+  libgnutls30t64    libldap-common   libsasl2-modules
+  libgssapi-krb5-2  libldap2         libsasl2-modules-db
+
+Suggested packages:
+  gnutls-bin  libsasl2-modules-gssapi-mit        libsasl2-modules-otp
+  krb5-doc    | libsasl2-modules-gssapi-heimdal  libsasl2-modules-sql
+  krb5-user   libsasl2-modules-ldap
+
+Summary:
+  Upgrading: 0, Installing: 30, Removing: 0, Not Upgrading: 24
+  Download size: 6479 kB
+  Space needed: 21.1 MB / 449 GB available
+
+
+0% [Working]
+            
+Get:1 http://ports.ubuntu.com/ubuntu-ports resolute-updates/main arm64 openssl arm64 3.5.5-1ubuntu3.5 [1223 kB]
+
+0% [1 openssl 8192 B/1223 kB 1%]
+                                
+16% [Working]
+             
+Get:2 http://ports.ubuntu.com/ubuntu-ports resolute-updates/main arm64 ca-certificates all 20260601~26.04.1 [139 kB]
+
+16% [2 ca-certificates 0 B/139 kB 0%]
+                                     
+18% [Waiting for headers]
+                         
+Get:3 http://ports.ubuntu.com/ubuntu-ports resolute-updates/main arm64 krb5-locales all 1.22.1-2ubuntu4.1 [13.6 kB]
+
+18% [3 krb5-locales 13.6 kB/13.6 kB 100%]
+                                         
+19% [Waiting for headers]
+                         
+Get:4 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 libffi8 arm64 3.5.2-4 [24.4 kB]
+
+19% [4 libffi8 24.4 kB/24.4 kB 100%]
+                                    
+20% [Waiting for headers]
+                         
+Get:5 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 libnettle8t64 arm64 3.10.2-1 [190 kB]
+
+20% [5 libnettle8t64 0 B/190 kB 0%]
+                                   
+23% [Waiting for headers]
+                         
+Get:6 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 libhogweed6t64 arm64 3.10.2-1 [200 kB]
+
+24% [6 libhogweed6t64 44.7 kB/200 kB 22%]
+                                         
+26% [Waiting for headers]
+                         
+Get:7 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 libunistring5 arm64 1.3-2build1 [601 kB]
+
+27% [7 libunistring5 41.1 kB/601 kB 7%]
+                                       
+34% [Waiting for headers]
+                         
+Get:8 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 libidn2-0 arm64 2.3.8-4build1 [68.3 kB]
+
+35% [8 libidn2-0 57.3 kB/68.3 kB 84%]
+                                     
+36% [Waiting for headers]
+                         
+Get:9 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 libp11-kit0 arm64 0.26.2-2 [306 kB]
+
+36% [9 libp11-kit0 25.9 kB/306 kB 8%]
+                                     
+40% [Waiting for headers]
+                         
+Get:10 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 libtasn1-6 arm64 4.21.0-2 [44.4 kB]
+
+41% [10 libtasn1-6 34.7 kB/44.4 kB 78%]
+                                       
+41% [Working]
+             
+Get:11 http://ports.ubuntu.com/ubuntu-ports resolute-updates/main arm64 libgnutls30t64 arm64 3.8.12-2ubuntu1.1 [957 kB]
+
+42% [11 libgnutls30t64 60.1 kB/957 kB 6%]
+                                         
+54% [Waiting for headers]
+                         
+Get:12 http://ports.ubuntu.com/ubuntu-ports resolute-updates/main arm64 libkrb5support0 arm64 1.22.1-2ubuntu4.1 [33.5 kB]
+
+54% [12 libkrb5support0 0 B/33.5 kB 0%]
+                                       
+55% [Waiting for headers]
+                         
+Get:13 http://ports.ubuntu.com/ubuntu-ports resolute-updates/main arm64 libk5crypto3 arm64 1.22.1-2ubuntu4.1 [82.2 kB]
+
+55% [13 libk5crypto3 27.8 kB/82.2 kB 34%]
+                                         
+57% [Waiting for headers]
+                         
+Get:14 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 libkeyutils1 arm64 1.6.3-6ubuntu3 [10.8 kB]
+
+57% [14 libkeyutils1 10.8 kB/10.8 kB 100%]
+                                          
+57% [Waiting for headers]
+                         
+Get:15 http://ports.ubuntu.com/ubuntu-ports resolute-updates/main arm64 libkrb5-3 arm64 1.22.1-2ubuntu4.1 [357 kB]
+
+58% [15 libkrb5-3 29.4 kB/357 kB 8%]
+                                    
+62% [Waiting for headers]
+                         
+Get:16 http://ports.ubuntu.com/ubuntu-ports resolute-updates/main arm64 libgssapi-krb5-2 arm64 1.22.1-2ubuntu4.1 [144 kB]
+
+62% [16 libgssapi-krb5-2 0 B/144 kB 0%]
+                                       
+65% [Waiting for headers]
+                         
+Get:17 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 bash-completion all 1:2.16.0-8build1 [214 kB]
+
+65% [17 bash-completion 8192 B/214 kB 4%]
+                                         
+68% [Waiting for headers]
+                         
+Get:18 http://ports.ubuntu.com/ubuntu-ports resolute-updates/main arm64 libnghttp2-14 arm64 1.68.0-2ubuntu0.2 [70.7 kB]
+
+68% [18 libnghttp2-14 8192 B/70.7 kB 12%]
+                                         
+70% [Waiting for headers]
+                         
+Get:19 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 libpsl5t64 arm64 0.21.2-1.1build2 [59.7 kB]
+
+70% [19 libpsl5t64 7493 B/59.7 kB 13%]
+                                      
+71% [Waiting for headers]
+                         
+Get:20 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 publicsuffix all 20260129.1928-1 [139 kB]
+
+72% [20 publicsuffix 32.2 kB/139 kB 23%]
+                                        
+74% [Waiting for headers]
+                         
+Get:21 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 libbrotli1 arm64 1.2.0-3build1 [345 kB]
+
+74% [21 libbrotli1 0 B/345 kB 0%]
+                                 
+78% [Waiting for headers]
+                         
+Get:22 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 libsasl2-modules-db arm64 2.1.28+dfsg1-9ubuntu3 [21.6 kB]
+
+79% [22 libsasl2-modules-db 21.6 kB/21.6 kB 100%]
+                                                 
+79% [Waiting for headers]
+                         
+Get:23 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 libsasl2-2 arm64 2.1.28+dfsg1-9ubuntu3 [53.7 kB]
+
+79% [23 libsasl2-2 4176 B/53.7 kB 8%]
+                                     
+81% [Waiting for headers]
+                         
+Get:24 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 libldap-common all 2.6.10+dfsg-1ubuntu5 [36.0 kB]
+
+81% [24 libldap-common 36.0 kB/36.0 kB 100%]
+                                            
+82% [Waiting for headers]
+                         
+Get:25 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 libldap2 arm64 2.6.10+dfsg-1ubuntu5 [200 kB]
+
+82% [25 libldap2 17.8 kB/200 kB 9%]
+                                   
+85% [Waiting for headers]
+                         
+Get:26 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 librtmp1 arm64 2.4+20151223.gitfa8646d.1-3 [58.7 kB]
+
+85% [26 librtmp1 4157 B/58.7 kB 7%]
+                                   
+86% [Waiting for headers]
+                         
+Get:27 http://ports.ubuntu.com/ubuntu-ports resolute-updates/main arm64 libssh2-1t64 arm64 1.11.1-1ubuntu0.26.04.4 [134 kB]
+
+86% [27 libssh2-1t64 8192 B/134 kB 6%]
+                                      
+89% [Waiting for headers]
+                         
+Get:28 http://ports.ubuntu.com/ubuntu-ports resolute-updates/main arm64 libcurl4t64 arm64 8.18.0-1ubuntu2.4 [414 kB]
+
+89% [28 libcurl4t64 8192 B/414 kB 2%]
+                                     
+94% [Waiting for headers]
+                         
+Get:29 http://ports.ubuntu.com/ubuntu-ports resolute-updates/main arm64 curl arm64 8.18.0-1ubuntu2.4 [268 kB]
+
+94% [29 curl 0 B/268 kB 0%]
+                           
+98% [Waiting for headers]
+                         
+Get:30 http://ports.ubuntu.com/ubuntu-ports resolute/main arm64 libsasl2-modules arm64 2.1.28+dfsg1-9ubuntu3 [70.0 kB]
+
+98% [30 libsasl2-modules 0 B/70.0 kB 0%]
+                                        
+100% [Working]
+              
+Fetched 6479 kB in 2s (3366 kB/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79, <STDIN> line 30.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/aarch64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/aarch64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/aarch64-linux-gnu/perl-base /usr/lib/aarch64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8, <STDIN> line 30.)
+debconf: falling back to frontend: Teletype
+Preconfiguring packages ...
+
+Selecting previously unselected package openssl.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 7720 files and directories currently installed.)
+Preparing to unpack .../00-openssl_3.5.5-1ubuntu3.5_arm64.deb ...
+Progress: [  0%] [..........................................................] Unpacking openssl (3.5.5-1ubuntu3.5) ...
+Progress: [  2%] [..........................................................] Selecting previously unselected package ca-certificates.
+Preparing to unpack .../01-ca-certificates_20260601~26.04.1_all.deb ...
+Progress: [  2%] [#.........................................................] Unpacking ca-certificates (20260601~26.04.1) ...
+Progress: [  3%] [#.........................................................] Selecting previously unselected package krb5-locales.
+Preparing to unpack .../02-krb5-locales_1.22.1-2ubuntu4.1_all.deb ...
+Progress: [  4%] [##........................................................] Unpacking krb5-locales (1.22.1-2ubuntu4.1) ...
+Selecting previously unselected package libffi8:arm64.
+Preparing to unpack .../03-libffi8_3.5.2-4_arm64.deb ...
+Progress: [  6%] [###.......................................................] Unpacking libffi8:arm64 (3.5.2-4) ...
+Progress: [  7%] [###.......................................................] Selecting previously unselected package libnettle8t64:arm64.
+Preparing to unpack .../04-libnettle8t64_3.10.2-1_arm64.deb ...
+Progress: [  7%] [####......................................................] Unpacking libnettle8t64:arm64 (3.10.2-1) ...
+Progress: [  8%] [####......................................................] Selecting previously unselected package libhogweed6t64:arm64.
+Preparing to unpack .../05-libhogweed6t64_3.10.2-1_arm64.deb ...
+Progress: [  9%] [#####.....................................................] Unpacking libhogweed6t64:arm64 (3.10.2-1) ...
+Selecting previously unselected package libunistring5:arm64.
+Preparing to unpack .../06-libunistring5_1.3-2build1_arm64.deb ...
+Progress: [ 11%] [######....................................................] Unpacking libunistring5:arm64 (1.3-2build1) ...
+Progress: [ 12%] [######....................................................] Selecting previously unselected package libidn2-0:arm64.
+Preparing to unpack .../07-libidn2-0_2.3.8-4build1_arm64.deb ...
+Progress: [ 12%] [#######...................................................] Unpacking libidn2-0:arm64 (2.3.8-4build1) ...
+Progress: [ 13%] [#######...................................................] Selecting previously unselected package libp11-kit0:arm64.
+Preparing to unpack .../08-libp11-kit0_0.26.2-2_arm64.deb ...
+Progress: [ 14%] [########..................................................] Unpacking libp11-kit0:arm64 (0.26.2-2) ...
+Selecting previously unselected package libtasn1-6:arm64.
+Preparing to unpack .../09-libtasn1-6_4.21.0-2_arm64.deb ...
+Progress: [ 16%] [#########.................................................] Unpacking libtasn1-6:arm64 (4.21.0-2) ...
+Progress: [ 17%] [#########.................................................] Selecting previously unselected package libgnutls30t64:arm64.
+Preparing to unpack .../10-libgnutls30t64_3.8.12-2ubuntu1.1_arm64.deb ...
+Progress: [ 17%] [##########................................................] Unpacking libgnutls30t64:arm64 (3.8.12-2ubuntu1.1) ...
+Progress: [ 18%] [##########................................................] Selecting previously unselected package libkrb5support0:arm64.
+Preparing to unpack .../11-libkrb5support0_1.22.1-2ubuntu4.1_arm64.deb ...
+Progress: [ 19%] [###########...............................................] Unpacking libkrb5support0:arm64 (1.22.1-2ubuntu4.1) ...
+Selecting previously unselected package libk5crypto3:arm64.
+Preparing to unpack .../12-libk5crypto3_1.22.1-2ubuntu4.1_arm64.deb ...
+Progress: [ 21%] [###########...............................................] Unpacking libk5crypto3:arm64 (1.22.1-2ubuntu4.1) ...
+Progress: [ 21%] [############..............................................] Selecting previously unselected package libkeyutils1:arm64.
+Preparing to unpack .../13-libkeyutils1_1.6.3-6ubuntu3_arm64.deb ...
+Progress: [ 22%] [############..............................................] Unpacking libkeyutils1:arm64 (1.6.3-6ubuntu3) ...
+Progress: [ 23%] [#############.............................................] Selecting previously unselected package libkrb5-3:arm64.
+Preparing to unpack .../14-libkrb5-3_1.22.1-2ubuntu4.1_arm64.deb ...
+Unpacking libkrb5-3:arm64 (1.22.1-2ubuntu4.1) ...
+Progress: [ 25%] [##############............................................] Selecting previously unselected package libgssapi-krb5-2:arm64.
+Preparing to unpack .../15-libgssapi-krb5-2_1.22.1-2ubuntu4.1_arm64.deb ...
+Progress: [ 26%] [##############............................................] Unpacking libgssapi-krb5-2:arm64 (1.22.1-2ubuntu4.1) ...
+Progress: [ 26%] [###############...........................................] Selecting previously unselected package bash-completion.
+Preparing to unpack .../16-bash-completion_1%3a2.16.0-8build1_all.deb ...
+Progress: [ 27%] [###############...........................................] Unpacking bash-completion (1:2.16.0-8build1) ...
+Progress: [ 28%] [################..........................................] Selecting previously unselected package libnghttp2-14:arm64.
+Preparing to unpack .../17-libnghttp2-14_1.68.0-2ubuntu0.2_arm64.deb ...
+Unpacking libnghttp2-14:arm64 (1.68.0-2ubuntu0.2) ...
+Progress: [ 30%] [#################.........................................] Selecting previously unselected package libpsl5t64:arm64.
+Preparing to unpack .../18-libpsl5t64_0.21.2-1.1build2_arm64.deb ...
+Progress: [ 31%] [#################.........................................] Unpacking libpsl5t64:arm64 (0.21.2-1.1build2) ...
+Progress: [ 31%] [##################........................................] Selecting previously unselected package publicsuffix.
+Preparing to unpack .../19-publicsuffix_20260129.1928-1_all.deb ...
+Progress: [ 32%] [##################........................................] Unpacking publicsuffix (20260129.1928-1) ...
+Progress: [ 33%] [###################.......................................] Selecting previously unselected package libbrotli1:arm64.
+Preparing to unpack .../20-libbrotli1_1.2.0-3build1_arm64.deb ...
+Unpacking libbrotli1:arm64 (1.2.0-3build1) ...
+Progress: [ 35%] [####################......................................] Selecting previously unselected package libsasl2-modules-db:arm64.
+Preparing to unpack .../21-libsasl2-modules-db_2.1.28+dfsg1-9ubuntu3_arm64.deb ...
+Progress: [ 36%] [####################......................................] Unpacking libsasl2-modules-db:arm64 (2.1.28+dfsg1-9ubuntu3) ...
+Progress: [ 36%] [#####################.....................................] Selecting previously unselected package libsasl2-2:arm64.
+Preparing to unpack .../22-libsasl2-2_2.1.28+dfsg1-9ubuntu3_arm64.deb ...
+Progress: [ 37%] [#####################.....................................] Unpacking libsasl2-2:arm64 (2.1.28+dfsg1-9ubuntu3) ...
+Progress: [ 38%] [######################....................................] Selecting previously unselected package libldap-common.
+Preparing to unpack .../23-libldap-common_2.6.10+dfsg-1ubuntu5_all.deb ...
+Unpacking libldap-common (2.6.10+dfsg-1ubuntu5) ...
+Progress: [ 40%] [#######################...................................] Selecting previously unselected package libldap2:arm64.
+Preparing to unpack .../24-libldap2_2.6.10+dfsg-1ubuntu5_arm64.deb ...
+Progress: [ 40%] [#######################...................................] Unpacking libldap2:arm64 (2.6.10+dfsg-1ubuntu5) ...
+Progress: [ 41%] [#######################...................................] Selecting previously unselected package librtmp1:arm64.
+Preparing to unpack .../25-librtmp1_2.4+20151223.gitfa8646d.1-3_arm64.deb ...
+Progress: [ 42%] [########################..................................] Unpacking librtmp1:arm64 (2.4+20151223.gitfa8646d.1-3) ...
+Selecting previously unselected package libssh2-1t64:arm64.
+Preparing to unpack .../26-libssh2-1t64_1.11.1-1ubuntu0.26.04.4_arm64.deb ...
+Progress: [ 44%] [#########################.................................] Unpacking libssh2-1t64:arm64 (1.11.1-1ubuntu0.26.04.4) ...
+Progress: [ 45%] [#########################.................................] Selecting previously unselected package libcurl4t64:arm64.
+Preparing to unpack .../27-libcurl4t64_8.18.0-1ubuntu2.4_arm64.deb ...
+Progress: [ 45%] [##########################................................] Unpacking libcurl4t64:arm64 (8.18.0-1ubuntu2.4) ...
+Progress: [ 46%] [##########################................................] Selecting previously unselected package curl.
+Preparing to unpack .../28-curl_8.18.0-1ubuntu2.4_arm64.deb ...
+Progress: [ 47%] [###########################...............................] Unpacking curl (8.18.0-1ubuntu2.4) ...
+Selecting previously unselected package libsasl2-modules:arm64.
+Preparing to unpack .../29-libsasl2-modules_2.1.28+dfsg1-9ubuntu3_arm64.deb ...
+Progress: [ 49%] [############################..............................] Unpacking libsasl2-modules:arm64 (2.1.28+dfsg1-9ubuntu3) ...
+Progress: [ 50%] [############################..............................] Setting up libkeyutils1:arm64 (1.6.3-6ubuntu3) ...
+Progress: [ 50%] [#############################.............................] Progress: [ 51%] [#############################.............................] Setting up libbrotli1:arm64 (1.2.0-3build1) ...
+Progress: [ 52%] [##############################............................] Setting up libsasl2-modules:arm64 (2.1.28+dfsg1-9ubuntu3) ...
+Progress: [ 54%] [###############################...........................] Progress: [ 55%] [###############################...........................] Setting up libnghttp2-14:arm64 (1.68.0-2ubuntu0.2) ...
+Progress: [ 55%] [################################..........................] Progress: [ 56%] [################################..........................] Setting up krb5-locales (1.22.1-2ubuntu4.1) ...
+Progress: [ 57%] [#################################.........................] Setting up libldap-common (2.6.10+dfsg-1ubuntu5) ...
+Progress: [ 59%] [##################################........................] Progress: [ 60%] [##################################........................] Setting up libkrb5support0:arm64 (1.22.1-2ubuntu4.1) ...
+Progress: [ 60%] [##################################........................] Progress: [ 61%] [###################################.......................] Setting up libsasl2-modules-db:arm64 (2.1.28+dfsg1-9ubuntu3) ...
+Progress: [ 63%] [####################################......................] Setting up libnettle8t64:arm64 (3.10.2-1) ...
+Progress: [ 64%] [####################################......................] Progress: [ 64%] [#####################################.....................] Setting up bash-completion (1:2.16.0-8build1) ...
+Progress: [ 65%] [#####################################.....................] Progress: [ 66%] [######################################....................] Setting up libunistring5:arm64 (1.3-2build1) ...
+Progress: [ 68%] [#######################################...................] Setting up libk5crypto3:arm64 (1.22.1-2ubuntu4.1) ...
+Progress: [ 69%] [#######################################...................] Progress: [ 69%] [########################################..................] Setting up libsasl2-2:arm64 (2.1.28+dfsg1-9ubuntu3) ...
+Progress: [ 70%] [########################################..................] Progress: [ 71%] [#########################################.................] Setting up libffi8:arm64 (3.5.2-4) ...
+Progress: [ 73%] [##########################################................] Setting up libhogweed6t64:arm64 (3.10.2-1) ...
+Progress: [ 74%] [##########################################................] Progress: [ 74%] [###########################################...............] Setting up libtasn1-6:arm64 (4.21.0-2) ...
+Progress: [ 75%] [###########################################...............] Progress: [ 76%] [############################################..............] Setting up libkrb5-3:arm64 (1.22.1-2ubuntu4.1) ...
+Progress: [ 78%] [#############################################.............] Setting up libssh2-1t64:arm64 (1.11.1-1ubuntu0.26.04.4) ...
+Progress: [ 79%] [#############################################.............] Progress: [ 79%] [##############################################............] Setting up openssl (3.5.5-1ubuntu3.5) ...
+Progress: [ 80%] [##############################################............] Setting up publicsuffix (20260129.1928-1) ...
+Progress: [ 82%] [###############################################...........] Progress: [ 83%] [###############################################...........] Setting up libldap2:arm64 (2.6.10+dfsg-1ubuntu5) ...
+Progress: [ 83%] [################################################..........] Progress: [ 84%] [################################################..........] Setting up libidn2-0:arm64 (2.3.8-4build1) ...
+Progress: [ 85%] [#################################################.........] Setting up ca-certificates (20260601~26.04.1) ...
+Progress: [ 87%] [##################################################........] debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/aarch64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/aarch64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/aarch64-linux-gnu/perl-base /usr/lib/aarch64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+debconf: falling back to frontend: Teletype
+Updating certificates in /etc/ssl/certs...
+121 added, 0 removed; done.
+Progress: [ 88%] [##################################################........] Setting up libp11-kit0:arm64 (0.26.2-2) ...
+Setting up libgssapi-krb5-2:arm64 (1.22.1-2ubuntu4.1) ...
+Progress: [ 89%] [###################################################.......] Progress: [ 89%] [###################################################.......] Setting up libgnutls30t64:arm64 (3.8.12-2ubuntu1.1) ...
+Progress: [ 90%] [####################################################......] Progress: [ 91%] [####################################################......] Setting up libpsl5t64:arm64 (0.21.2-1.1build2) ...
+Progress: [ 93%] [#####################################################.....] Setting up librtmp1:arm64 (2.4+20151223.gitfa8646d.1-3) ...
+Progress: [ 93%] [######################################################....] Progress: [ 94%] [######################################################....] Setting up libcurl4t64:arm64 (8.18.0-1ubuntu2.4) ...
+Progress: [ 95%] [#######################################################...] Setting up curl (8.18.0-1ubuntu2.4) ...
+Progress: [ 97%] [########################################################..] Progress: [ 98%] [########################################################..] Processing triggers for libc-bin (2.43-2ubuntu2.3) ...
+Processing triggers for ca-certificates (20260601~26.04.1) ...
+Progress: [ 98%] [#########################################################.] Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+Progress: [ 99%] [#########################################################.] 
+root@c55faa0be7ef:/# curl --version
+
+curl 8.18.0 (aarch64-unknown-linux-gnu) libcurl/8.18.0 OpenSSL/3.5.5 zlib/1.3.1 brotli/1.2.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.21.2 libssh2/1.11.1 nghttp2/1.68.0 librtmp/2.3 mit-krb5/1.22.1 OpenLDAP/2.6.10
+Release-Date: 2026-01-07, security patched: 8.18.0-1ubuntu2.4
+Protocols: dict file ftp ftps gopher gophers http https imap imaps ipfs ipns ldap ldaps mqtt pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp ws wss
+Features: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM PSL SPNEGO SSL threadsafe TLS-SRP UnixSockets zstd
+root@c55faa0be7ef:/# exit
+
+exit

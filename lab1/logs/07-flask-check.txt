@@ -1,0 +1,8 @@
+$ docker run -d -p 5000:5000 --name flask-container my-flask-app
+eae6b55cbeb8a6c4efef083bc3db1b360c956a261d92c1eb8ef15b67d730e11e
+docker: Error response from daemon: ports are not available: exposing port TCP 0.0.0.0:5000 -> 127.0.0.1:0: listen tcp 0.0.0.0:5000: bind: address already in use
+
+Run 'docker run --help' for more information
+
+[exit code: 125]
+

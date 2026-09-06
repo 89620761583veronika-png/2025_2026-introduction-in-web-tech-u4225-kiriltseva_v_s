@@ -29,3 +29,9 @@ $RECYCLE.BIN/
 *.key
 id_ed25519
 id_rsa
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
