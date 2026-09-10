@@ -1,5 +1,5 @@
 site_name: Вероника Кирильцева
-site_description: Учебное портфолио Вероники Кирильцевой — веб-технологии, Docker и документация.
+site_description: Вероника Кирильцева — международные ивенты, хакатоны, менторство и технологии.
 site_author: Кирильцева Вероника Сергеевна
 # site_url добавляется после выбора адреса публикации.
 use_directory_urls: true
@@ -63,4 +63,4 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/89620761583veronika-png
       name: GitHub Вероники Кирильцевой
-copyright: © 2026 Вероника Кирильцева · Учебное портфолио
+copyright: © 2026 Вероника Кирильцева · Ивенты, книги и технологии 🦋
