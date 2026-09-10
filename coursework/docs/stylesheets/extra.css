@@ -40,3 +40,13 @@
 .resume-photo { display: block; width: 100%; height: auto; border-radius: .9rem; }
 .md-typeset .resume-intro h2 { margin-top: 0; }
 @media (max-width: 600px) { .resume-intro { grid-template-columns: 1fr; } .resume-photo { max-width: 240px; margin: 0 auto; } }
+
+/* Портрет на главной: отдельная колонка и мягкая розовая рамка. */
+.hero { display: grid; grid-template-columns: minmax(0, 1fr) 200px; gap: 1.8rem; align-items: center; }
+.hero .hero-copy { min-width: 0; }
+.hero > p { margin: 0; }
+.hero .eyebrow { padding-right: 0; }
+.md-typeset .hero h1 { max-width: 100%; }
+.hero-portrait { display: block; width: 100%; height: auto; box-sizing: border-box; border: 7px solid #ffd1e8; border-radius: 5rem 5rem 1.3rem 1.3rem; outline: 1px solid #ffffff70; outline-offset: 5px; box-shadow: 0 12px 30px #42132d45; }
+@media (max-width: 900px) { .hero { grid-template-columns: minmax(0, 1fr) 150px; gap: 1.2rem; } }
+@media (max-width: 600px) { .hero { grid-template-columns: 1fr; } .hero > p { grid-row: 1; width: 160px; margin: .4rem auto .6rem; } .hero .eyebrow { max-width: 100%; } .md-typeset .hero h1 { margin-top: 1rem; } }
