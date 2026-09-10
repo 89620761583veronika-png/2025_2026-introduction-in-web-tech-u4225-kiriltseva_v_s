@@ -1,7 +1,7 @@
 site_name: Вероника Кирильцева
 site_description: Вероника Кирильцева — международные ивенты, хакатоны, менторство и технологии.
 site_author: Кирильцева Вероника Сергеевна
-# site_url добавляется после выбора адреса публикации.
+site_url: https://89620761583veronika-png.github.io/2025_2026-introduction-in-web-tech-u4225-kiriltseva_v_s/
 use_directory_urls: true
 theme:
   name: material

@@ -23,6 +23,8 @@
 
 ## Курсовая работа
 
+🌐 [Открыть персональный сайт](https://89620761583veronika-png.github.io/2025_2026-introduction-in-web-tech-u4225-kiriltseva_v_s/)
+
 [Создание персонального сайта с использованием MkDocs](coursework/README.md).
 
 - [Отчёт](coursework/report/coursework.md).
