@@ -60,6 +60,9 @@ extra_css:
   - stylesheets/extra.css
 extra:
   social:
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/vkiriltseva
+      name: Telegram Вероники Кирильцевой
     - icon: fontawesome/brands/github
       link: https://github.com/89620761583veronika-png
       name: GitHub Вероники Кирильцевой
